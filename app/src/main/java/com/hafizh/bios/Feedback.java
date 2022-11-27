@@ -1,14 +1,14 @@
 package com.hafizh.bios;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SignUpPage extends AppCompatActivity {
+import android.os.Bundle;
+
+public class Feedback extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up_page);
+        setContentView(R.layout.activity_feedback);
     }
 }

@@ -89,8 +89,8 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginEnd="50dp"
             android:src="@drawable/arrow"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -100,8 +100,8 @@
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginEnd="50dp"
             android:src="@drawable/arrow"
             app:layout_constraintBottom_toBottomOf="@+id/imageView6"
@@ -111,8 +111,8 @@
 
         <ImageView
             android:id="@+id/imageView12"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginEnd="50dp"
             android:src="@drawable/arrow"
             app:layout_constraintBottom_toBottomOf="@+id/imageView10"
@@ -196,7 +196,7 @@
             tools:ignore="MissingConstraints" />
 
         <ImageButton
-            android:id="@+id/button_login2"
+            android:id="@+id/signupbutton"
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_marginTop="5dp"
@@ -213,10 +213,10 @@
             android:layout_height="wrap_content"
             android:text="SIGN UP"
             android:textColor="@color/textColourMedium"
-            app:layout_constraintBottom_toBottomOf="@+id/button_login2"
-            app:layout_constraintEnd_toEndOf="@+id/button_login2"
-            app:layout_constraintStart_toStartOf="@+id/button_login2"
-            app:layout_constraintTop_toTopOf="@+id/button_login2"
+            app:layout_constraintBottom_toBottomOf="@+id/signupbutton"
+            app:layout_constraintEnd_toEndOf="@+id/signupbutton"
+            app:layout_constraintStart_toStartOf="@+id/signupbutton"
+            app:layout_constraintTop_toTopOf="@+id/signupbutton"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

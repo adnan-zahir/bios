@@ -1,10 +1,6 @@
 package com.hafizh.bios;
 
-import android.content.Context;
-
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class ClassFragment extends Fragment {
 

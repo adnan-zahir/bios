@@ -2,11 +2,16 @@ package com.hafizh.bios;
 
 import android.os.Bundle;
 
+import androidx.annotation.ContentView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +19,17 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class ClassFragment extends Fragment {
+    ListView listView;
+    ArrayAdapter<String> adapter;
+    String[] data = {
+            "Pengembangan Perangkat Lunak dan Gim 1",
+            "Pengembangan Perangkat Lunak dan Gim 2",
+            "Desain Komunikasi dan Visual 1",
+            "Desain Komunikasi dan Visual 2",
+            "Teknik Jaringan Komputer dan Telekomunikasi 1",
+            "Teknik Jaringan Komputer dan Telekomunikasi 2"
+    };
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

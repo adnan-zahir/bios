@@ -1,34 +1,21 @@
 package com.hafizh.bios;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.ContentView;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.ImageButton;
 
-import java.util.ArrayList;
+import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link ClassFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ClassFragment extends Fragment {
-    ListView listView;
-    ArrayAdapter<String> adapter;
-    String[] data = {
-            "Pengembangan Perangkat Lunak dan Gim 1",
-            "Pengembangan Perangkat Lunak dan Gim 2",
-            "Desain Komunikasi dan Visual 1",
-            "Desain Komunikasi dan Visual 2",
-            "Teknik Jaringan Komputer dan Telekomunikasi 1",
-            "Teknik Jaringan Komputer dan Telekomunikasi 2"
-    };
+public class ClassFragment extends Fragment implements View.OnClickListener{
+    ImageButton xipplg1;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -75,6 +62,20 @@ public class ClassFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_class, container, false);
+        View view =  inflater.inflate(R.layout.fragment_class, container, false);
+        xipplg1 = (ImageButton) view.findViewById(R.id.imageButton10);
+        xipplg1.setOnClickListener(this);
+
+        return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.imageButton10:
+                Intent xipplg1 = new Intent(getActivity(), SiswaKelas.class);
+                startActivity(xipplg1);
+                break;
+        }
     }
 }

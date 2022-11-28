@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
-public class ProfileFragment extends Fragment {
-    ImageButton login, signup;
+public class ProfileFragment extends Fragment implements View.OnClickListener{
+    ImageView feedback, kebprivasi;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -45,7 +45,24 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return null;
+        View view = inflater.inflate(R.layout.fragment_profile, container,false);
+        feedback = (ImageView) view.findViewById(R.id.imageView2);
+        feedback.setOnClickListener(this);
+        kebprivasi = (ImageView) view.findViewById(R.id.imageView9);
+        kebprivasi.setOnClickListener(this);
+        return view;
+    }
+    @Override
+    public void onClick (View v){
+        switch (v.getId()){
+            case R.id.imageView2:
+                Intent intent1 = new Intent(getActivity(), Feedback.class);
+                startActivity(intent1);
+                break;
+            case R.id.imageView9:
+                Intent intent2 = new Intent(getActivity(), KebijakanPrivasi.class);
+                startActivity(intent2);
+                break;
+        }
     }
 }

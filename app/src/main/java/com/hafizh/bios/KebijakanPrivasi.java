@@ -1,8 +1,8 @@
 package com.hafizh.bios;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class KebijakanPrivasi extends AppCompatActivity {
 
